@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yx.elema.mapper.ShopMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yx.elema.pojo.Shop">
+        <id column="id" property="id"/>
+        <result column="shop_name" property="shopName"></result>
+        <result column="parent_id" property="parentId"></result>
+        <result column="is_enabled" property="isEnabled"></result>
+        <result column="shop_address" property="shopAddress"></result>
+        <result column="shop_score" property="shopScore"></result>
+        <result column="shop_sale" property="shopSale"></result>
+        <result column="shop_distribution" property="shopDistribution"></result>
+        <result column="shop_url" property="shopUrl"></result>
+        <result column="cates_ids" property="catesIds"></result>
+        <result column="distribution_min_price" property="distributionMinPrice"></result>
+    </resultMap>
+
+    <resultMap id="getShopByMenuId" type="com.yx.elema.pojo.Shop" extends="BaseResultMap">
+        <result column="shop_name" property="shopName"></result>
+        <result column="shop_address" property="shopAddress"></result>
+        <result column="shop_score" property="shopScore"></result>
+        <result column="shop_sale" property="shopSale"></result>
+        <result column="shop_distribution" property="shopDistribution"></result>
+        <result column="shop_url" property="shopUrl"></result>
+        <result column="cates_ids" property="catesIds"></result>
+        <result column="distribution_min_price" property="distributionMinPrice"></result>
+    </resultMap>
+
+    <resultMap id="getShopCateWithGoods" type="com.yx.elema.pojo.Shop" extends="BaseResultMap">
+        <id column="shopId" property="id"></id>
+        <result column="shop_name" property="shopName"></result>
+        <result column="shop_url" property="shopUrl"></result>
+        <result column="shop_score" property="shopScore"></result>
+        <result column="shop_address" property="shopAddress"></result>
+        <result column="shop_sale" property="shopSale"></result>
+        <result column="cates_ids" property="catesIds"></result>
+        <collection property="shopCateList" ofType="com.yx.elema.pojo.ShopCate">
+            <id column="shopCateId" property="id"></id>
+            <result column="shop_cate_name" property="shopCateName"></result>
+            <result column="goods_ids" property="goodsIds"></result>
+            <collection property="goodsList" ofType="com.yx.elema.pojo.Goods">
+                <id column="goodsId" property="id"></id>
+                <result column="goods_url" property="goodsUrl"></result>
+                <result column="goods_name" property="goodsName"></result>
+                <result column="goods_sale" property="goodsSale"></result>
+                <result column="goods_price" property="goodsPrice"></result>
+                <result column="goods_intro" property="goodsIntro"></result>
+            </collection>
+        </collection>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id
+        , shop_name, is_enabled, shop_address, shop_score, shop_sale, shop_distribution, shop_url, cates_ids, distribution_min_price
+    </sql>
+
+    <!--获取店铺通过menuId-->
+    <select id="getShopByMenuId" resultMap="getShopByMenuId">
+        SELECT
+            s.id,
+            s.cates_ids,
+            s.shop_name,
+            s.shop_address,
+            s.shop_score,
+            s.shop_sale,
+            s.shop_url,
+            s.shop_distribution,
+            s.distribution_min_price
+        FROM
+            t_shop s
+        WHERE
+            s.is_enabled = 1
+          <if test="menuId != null and menuId != ''">
+              AND
+                s.parent_id = #{menuId}
+          </if>
+    </select>
+
+    <!--获取店铺详情通过shopId-->
+    <select id="getShopCateWithGoods" resultMap="getShopCateWithGoods">
+        SELECT
+            s.id as shopId,
+            s.parent_id,
+            s.shop_name,
+            s.cates_ids,
+            s.shop_url,
+            s.shop_sale,
+            s.shop_score,
+            s.shop_address,
+            sc.id as shopCateId,
+            sc.shop_cate_name,
+            sc.goods_ids,
+            g.id as goodsId,
+            g.goods_name,
+            g.goods_intro,
+            g.goods_url,
+            g.goods_sale,
+            g.goods_price
+        FROM
+            t_shop s,
+            t_shop_cate sc,
+            t_goods g
+        WHERE
+            s.id = sc.shop_id
+          AND
+            sc.id = g.shop_cate_id
+          AND
+            s.is_enabled = 1
+          AND
+            sc.is_enabled = 1
+          AND
+            g.is_enabled = 1
+          <if test="shopId != null and shopId != ''">
+              AND
+                s.id = #{shopId}
+          </if>
+    </select>
+</mapper>

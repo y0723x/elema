@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8f15a1c9-5358-415b-945b-7a75a617017c" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="XML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="28gMurp8dKwqiT41XvtIA1l4mZX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/elema-server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yx\Desktop\other\java\demo\elema\elema-server\src\main\resources\static\" />
+      <recent name="C:\Users\yx\Desktop\other\java\demo\elema\elema-server\src\main\resources\config" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.yx.elema.mapper" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.yx.elema.config.security.component" />
+      <recent name="com.yx.elema.config" />
+      <recent name="com.yx.elema.service" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ElemaServerApplication">
+    <configuration name="ElemaServerApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="elema-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yx.elema.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yx.elema" />
+      <option name="MAIN_CLASS_NAME" value="com.yx.elema.ElemaServerApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElemaServerApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="elema-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yx.elema.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yx.elema" />
+      <option name="MAIN_CLASS_NAME" value="com.yx.elema.ElemaServerApplicationTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElemaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="elema-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yx.elema.ElemaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ElemaServerApplicationTests.test" />
+        <item itemvalue="JUnit.ElemaServerApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f15a1c9-5358-415b-945b-7a75a617017c" name="Changes" comment="" />
+      <created>1651634001227</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651634001227</updated>
+      <workItem from="1651634003430" duration="5474000" />
+      <workItem from="1651803721032" duration="15418000" />
+      <workItem from="1651894889498" duration="8853000" />
+      <workItem from="1652062251187" duration="4508000" />
+      <workItem from="1652094916670" duration="5284000" />
+      <workItem from="1652156980333" duration="4194000" />
+      <workItem from="1652236245176" duration="6213000" />
+      <workItem from="1652328151030" duration="8556000" />
+      <workItem from="1652408780672" duration="3126000" />
+      <workItem from="1652496264109" duration="4802000" />
+      <workItem from="1652591521443" duration="1967000" />
+      <workItem from="1652710690922" duration="788000" />
+      <workItem from="1652753572641" duration="5265000" />
+      <workItem from="1652778609852" duration="636000" />
+      <workItem from="1652838294768" duration="1203000" />
+      <workItem from="1652943733845" duration="678000" />
+      <workItem from="1653015101925" duration="9529000" />
+      <workItem from="1653106224630" duration="22049000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
